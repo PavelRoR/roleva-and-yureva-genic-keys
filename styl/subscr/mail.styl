@@ -1,0 +1,182 @@
+#mail_section
+	width 100%
+	padding 12px 0 21px
+	background-color:  #ff395a
+.mail_title
+	position relative
+	font-size: 27px;
+	font-family: "OpenSansCondensedBold", sans-serif;
+	color: rgb(254, 254, 254);
+	line-height: 1
+	margin 38px 0 0
+	letter-spacing: -0.3px;
+	&:after
+		content: url(../img/arrow.png)
+		position: absolute
+		display: block
+		top 4px
+		right -37px
+.mail_subtitle
+	font-size: 14px;
+	color: rgb(255, 255, 255);
+	line-height: 1.3;
+	text-align: center;
+	margin 0 0 13px
+.form_newsletter_mail_section
+.mail_subtitle_first
+	margin-left: 50px
+.form_container
+	width 100%
+	max-width 495px
+	margin 0 auto
+	background-color #fff
+	border-radius: 25.5px
+	overflow hidden
+.mail
+	border-radius: 25.5px
+	border: none
+	height 51px
+	line-height: 51px
+	padding-left 20px
+	color: rgba(24, 24, 24, 0.6);
+	float left
+	width 100%
+	max-width 300px
+.button_mail 
+	background-color: rgb(6, 30, 49);
+	max-width: 174px;
+	height: 51px;
+	float right
+	&:hover
+		background-color: #0e3f66
+.alert_message {
+	display: none;
+	text-align: center;
+	font-size: 16px;
+	padding-top: 10px;
+	font-family: 'OpenSansRegular', sans-serif;
+	color: #a90c04
+}
+.checking {
+	display: table;
+	width 100%
+	max-width: 495px
+	margin: 10px auto 0;
+	text-align: left
+}
+
+.checking .check_label {
+	font-size: 14px;
+	font-family: "OpenSansLight", sans-serif;
+	color: #fefdfc
+	line-height: 14px;
+	cursor: pointer;
+	position: relative;
+	display: table-cell;
+	vertical-align: middle;
+	padding: 0 0 0 30px;
+	text-align: left
+}
+
+.checking .check_label a {
+	color: #fefdfc
+	text-decoration: underline
+}
+
+.checking .check_label:before {
+	content: '';
+	background-color: #aaa;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 14px;
+	height: 14px;
+
+}
+
+.checking .check_label:after {
+	content: '';
+	position: absolute;
+	left: 5px;
+	top: 2px;
+	width: 5px;
+	height: 10px;
+	background-color: transparent;
+	opacity: 0;
+	border-bottom: 3px solid #1f2022
+	border-right: 3px solid #1f2022
+	-webkit-transform: rotate(41deg);
+	-ms-transform: rotate(41deg);
+	transform: rotate(41deg);
+	-webkit-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+
+}
+
+.check {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+	width: 0;
+	height 0;
+	border: 0;
+	left -99999px;
+}
+
+.check:checked + label:before {
+	border: none
+	background-color: #fff;
+
+}
+
+.check:checked + label:after {
+	opacity: 1;
+	top: 2px;
+	-webkit-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+@-webkit-keyframes autofill {
+	to {
+		color: rgba(29, 28, 24, 0.702);
+		background: #f7f8fa;
+	}
+}
+
+input:-webkit-autofill {
+	-webkit-animation-name: autofill;
+	-webkit-animation-fill-mode: both;
+}
+
+.mail_soc_buttons
+	width 100%
+	max-width 122px
+	margin 0 auto
+	text-align: center
+.mail_soc_buttons_link
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	color: #fff;
+	display: inline-block;
+	text-align: center;
+	padding: 0 5px;
+	font-size: 10px;
+	margin: 0 auto;
+	border-radius: 50px
+	svg
+		text-align: center
+		fill: #fff;
+		vertical-align: middle;
+		height: 25px
+		width: auto
+.soc_button_vk {
+	background-color: #31648B
+	margin-right: 21px
+}
+
+.soc_button_ms {
+	background-color: #008CFF
+}
