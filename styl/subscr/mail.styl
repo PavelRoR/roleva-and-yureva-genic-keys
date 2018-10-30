@@ -55,7 +55,7 @@
 	font-size: 16px;
 	padding-top: 10px;
 	font-family: 'OpenSansRegular', sans-serif;
-	color: #a90c04
+	color: #000
 }
 .checking {
 	display: table;
@@ -79,10 +79,14 @@
 }
 
 .checking .check_label a {
-	color: #fefdfc
 	text-decoration: underline
 }
-
+.checking .check_label a:focus
+	opacity: 1
+	color #fefdfc
+.checking .check_label a:hover
+	opacity: .8
+	color #fefdfc
 .checking .check_label:before {
 	content: '';
 	background-color: #aaa;

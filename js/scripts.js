@@ -12,15 +12,14 @@ $(document).ready(function () {
                 email = $('.mail', this),
                 button = $('.button_mail', this);
             if (!email.val().match(reNone)) {
-                email.css("border", "1px solid red");
                 message.text('Введите email').slideDown(500);
                 return false;
             } else if (!email.val().match(reEm)) {
-                email.css("border", "1px solid red");
                 message.text('Email введен некорректно').slideDown(500);
                 return false;
             } else if (!check.prop("checked")) {
-                check.next().css("color", "red");
+                check.next().css("color", "#000");
+                check.next().children().css("color", "#000");
                 message.text('Подтвердите соглашение').slideDown(500);
                 return false;
             } else {
@@ -31,20 +30,22 @@ $(document).ready(function () {
             }
         });
         email.click(function () {
-            email.css("border", "none");
             message.slideUp(500);
         });
         check.click(function () {
-            check.next().css("color", "#aaa");
+            check.next().css("color", "#fefdfc");
+            check.next().children().css("color", "#fefdfc");
             message.slideUp(500);
         });
     });
 
     /*Отзывы*/
     $('#revs_container').owlCarousel({
+        slideSpeed: 2000,
+        paginationSpeed: 2000,
         items: 1,
         loop: true,
-        margin: 0,
+        margin: 20,
         nav: false,
         dots: true,
         autoHeightClass: 'owl-height',
