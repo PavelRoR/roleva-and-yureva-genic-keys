@@ -131,6 +131,82 @@ button
 		color: rgb(255, 255, 255);
 h1,h2,h3,h4,h5,h6
 	font-weight: normal
+#main
+	width 100%
+	padding 0 0 46px
+	background-color: #02102F
+	background-image url(../img/main_bg.jpg)
+	background-repeat no-repeat
+	background-position: center top
+	background-size: cover
+	// text-align: center
+	.container
+		position relative
+#header
+	padding: 30px 0
+	margin-bottom: 20px
+	position relative
+	z-index: 9
+#logo
+	width 176px
+	float: left
+	opacity .6
+	box-shadow: 0 0 4px 7px rgba(#000, .72)
+.contacts
+	float: right
+	text-align: right
+	line-height  12px
+	a
+		.fa
+			color: #fff
+			font-size: 16px
+			margin: 0 10px 0  40px
+		.fa+span
+			line-height: 21px
+			font-size: 14px;
+			font-family: "Comfortaa", sans-serif;
+			color: rgba(#fff, .6)
+			text-align: right;
+			&:hover
+				text-decoration underline
+.tel:first-child
+	.fa-phone
+		margin-left: 0
+.pre
+	font-family: "OpenSansBold", sans-serif;
+	color: rgb(255, 57, 90);
+	text-transform: uppercase;
+	line-height: 1.493;
+	position relative
+	z-index: 9
+.main_title
+	display: inline-block
+	font-size: 45px;
+	font-family: "OpenSansCondensedBold", sans-serif;
+	color: rgb(255, 255, 255);
+	line-height: 48px
+	margin 15px 0 5px
+	border-bottom: 3px dashed
+	letter-spacing: -0.8px;
+	position relative
+	z-index: 9
+.main_date
+	margin 0 0 20px
+	font-size: 30px;
+	font-family: "OpenSansCondensedBold", sans-serif;
+	color #ff395a
+	position relative
+	z-index: 9
+	span
+		color #fff
+		font-family: "OpenSansCondensedLight", sans-serif;
+.main_video_wrapper
+	max-width 560px
+	position relative
+	z-index: 9
+	margin:0 0 25px
+.button_main
+	margin-left: 0
 .general_title
 	font-size: 34px;
 	font-family: "OpenSansCondensedBold", sans-serif;
@@ -141,13 +217,51 @@ h1,h2,h3,h4,h5,h6
 	margin-bottom: 85px
 	span
 		color #f43758
-
-@import 'subscr/main'
-@import 'subscr/main'
-@import 'subscr/mail'
-@import 'subscr/for'
-@import 'subscr/after'
-@import 'subscr/plan'
-@import 'subscr/authors'
-@import 'subscr/revs'
-@import 'subscr/footer'
+#bonus_feedback
+	padding: 60px 0
+#vk
+#fb
+	border-radius: 10px;
+	background-color #fff
+	border: 1px dashed rgba(#061e31, .2)
+#footer
+	width 100%
+	padding 36px 0 40px
+	background-color: #010726
+	text-align: center
+	h5
+		font-size: 24px;
+		color: rgb(255, 252, 252);
+		line-height: 1.042;
+		margin 0
+		font-family: 'OpenSansSemibold', sans-serif
+	p
+	#conditions
+		font-size: 14px;
+		color: rgba(254, 254, 254, 0.302);
+		line-height: 1.786;
+	#conditions
+		margin 15px 0 0
+		text-decoration: underline
+.soc_buttons
+	width 100%
+	margin: 0 auto
+	a
+		display: inline-block
+		margin: 20px 13px
+		position relative
+		z-index: 1
+		border-radius: 50px
+		width: 32px;
+		height 32px
+		background-color: #f43758
+		.fa
+			width: 32px;
+			height: 32px;
+			color #fff
+			font-size 18px
+			line-height 32px
+			position relative
+			z-index 9
+		&:hover
+			background-color: #0e3f66
