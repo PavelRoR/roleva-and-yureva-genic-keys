@@ -113,7 +113,6 @@ button
 	width 100%
 	max-width 332px
 	background-color: rgb(244, 55, 88);
-	width: 332px;
 	height: 55px;
 	line-height: 55px;
 	font-family: "OpenSansCondensedBold", sans-serif;
@@ -139,7 +138,6 @@ h1,h2,h3,h4,h5,h6
 	background-repeat no-repeat
 	background-position: center top
 	background-size: cover
-	// text-align: center
 	.container
 		position relative
 #header
@@ -179,18 +177,19 @@ h1,h2,h3,h4,h5,h6
 	line-height: 1.493;
 	position relative
 	z-index: 9
+	margin-bottom: 10px
 .main_title
-	display: inline-block
+	display: inline
 	font-size: 45px;
 	font-family: "OpenSansCondensedBold", sans-serif;
 	color: rgb(255, 255, 255);
 	line-height: 48px
-	margin 15px 0 5px
 	border-bottom: 3px dashed
 	letter-spacing: -0.8px;
 	position relative
 	z-index: 9
 .main_date
+	padding-top: 15px
 	margin 0 0 20px
 	font-size: 30px;
 	font-family: "OpenSansCondensedBold", sans-serif;
@@ -219,6 +218,7 @@ h1,h2,h3,h4,h5,h6
 		color #f43758
 #bonus_feedback
 	padding: 60px 0
+	min-height calc(100vh - 850px)
 #vk
 #fb
 	border-radius: 10px;
@@ -265,3 +265,93 @@ h1,h2,h3,h4,h5,h6
 			z-index 9
 		&:hover
 			background-color: #0e3f66
+@media screen and (min-width 2295px)
+	.container
+		width 1400px
+	.contacts a .fa
+	.contacts a .fa + span
+	.pre
+	.button
+		font-size: 20px
+	.pre
+		margin-bottom: 20px
+	.main_date
+		padding-top: 35px
+		margin-bottom: 30px
+	.main_video_wrapper
+		max-width 700px
+	#footer #conditions, #footer p
+		font-size: 18px
+	.soc_buttons a
+		width: 45px
+		height 45px
+	.soc_buttons a .fa
+		width: 45px
+		height 45px
+		line-height: 45px
+		font-size: 23px
+	#bonus_feedback
+		min-height 1px
+@media screen and (max-width 1199px)
+	.contacts a .fa
+		margin 0 8px 0 14px
+@media screen and (max-width 991px)
+	#header
+		margin-bottom: 0
+	#logo
+		display block
+		float: none
+		margin 0 auto 5px
+	.contacts
+		float: none
+		text-align: center
+		a
+			display: inline-block
+@media screen and (max-width 767px)
+	#main
+		text-align: center
+		background-position: center left
+		padding-bottom: 30px
+	#header
+		padding: 15px 0
+		margin-bottom: 10px
+	.main_video_wrapper
+		margin 0 auto 25px
+	.button
+		margin 0 auto
+	#bonus_feedback
+		padding 30px 0
+	.general_title
+	#vk
+		margin-bottom: 30px
+	#footer
+		padding 20px 0
+	#footer h5
+		margin-bottom: 20px
+	.soc_buttons a
+		margin 0 8px 15px
+@media screen and (max-width 481px)
+	#header
+		margin-bottom: 0
+	#logo
+		width: 170px
+	.contacts a .fa
+	.contacts a .fa + span
+	#footer #conditions, #footer p
+		font-size: 12px
+	.main_title
+		font-size: 34px
+	.main_date
+	.general_title
+		font-size: 26px
+	#footer h5
+		font-size: 20px
+@media screen and (max-width 380px)
+	.main_title
+		font-size: 28px
+		line-height: 28px
+	.main_date
+	.general_title
+		font-size: 22px
+	#vk
+		margin-bottom: 15px
