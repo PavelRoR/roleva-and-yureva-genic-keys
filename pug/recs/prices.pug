@@ -1,0 +1,55 @@
+-var sale_1 = '1 000р.'
+-var sale_2 = '2 000р.'
+-var today_1 = '8 000р.'
+-var today_2 = '10 000р.'
+-var link_1 = ''
+-var link_2 = ''
+
+section#prices
+	.container
+		.prices_wrapper
+			.col-md-6.col-sm-6
+				.price_container
+					.price_head
+						h4.price_head_title 
+							small Пакет
+							| "Стандарт"
+					.price_body
+						ul.price_body_list
+							li 11 уроков по 3 часа:
+						p.price_body_more(data-toggle="modal" data-target="#modalModule_1") Подробнее
+						ul.price_body_list
+							li Домашние задания
+							li Skype-чат
+							li Сертификат «Механика генных ключей»
+					.price_footer
+						p.price.price_full Стоимость:
+							span 9 900р.
+						p.price.price_sale Скидка:
+							span#sale_1= sale_1
+						p.price.price_today Стоимость сегодня:
+							span#today_1=today_1
+						a.button.price_footer_button.price_footer_button_1#link_1(href=link_1 target="_blank") Выбрать
+			.col-md-6.col-sm-6
+				.price_container
+					.price_head
+						h4.price_head_title 
+							small Пакет
+							| "VIP"
+					.price_body
+						ul.price_body_list
+							li Весь пакет “Стандарт”
+							li 10 часовых консультаций с куратором
+					.price_footer
+						p.price.price_full Стоимость:
+							span 14 900р.
+						p.price.price_sale Скидка:
+							span#sale_2= sale_2
+						p.price.price_today Стоимость сегодня:
+							span#today_2=today_2
+						a.button.price_footer_button.price_footer_button_2#link_2(href=link_2 target="_blank") Выбрать
+		.clearfix
+		.timer
+			h4 До уменьшения скидки:
+			.clock
+			.clock-stop

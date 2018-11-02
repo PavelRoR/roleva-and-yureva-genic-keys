@@ -6,12 +6,16 @@ html(lang="ru")
 		meta(http-equiv="X-UA-Compatible" content="ie=edge")
 		meta(name="author" content="Master Vision")
 		meta(name="description" content="Записи и домашние задания интенсива «Механика генных ключей»")
+		meta(property="fb:app_id" content="2030481470529055")
 		title  Записи и домашние задания интенсива «Механика генных ключей»
 		link(rel="icon" type="image/x-icon" href="favicon.ico")
 		link(rel="shortcut icon" type="image/x-icon" href="favicon.png")
 		//- link(rel="stylesheet" href="../css/recs_libs.min.css")
-		link(rel="stylesheet" href="../css/bootstrap.min.css")
+		link(rel="stylesheet" href="../css/recs_libs.min.css")
 		link(rel="stylesheet" href="../css/recs_styles.css")
+		script(src="//vk.com/js/api/openapi.js?153")
+		script
+			| VK.init({apiId: 6314801,onlyWidgets: true});
 		script 
 			| !function(){var t=document.createElement("script");t.type="text/javascript",t.async=!0,t.src="https://vk.com/js/api/openapi.js?158",t.onload=function(){VK.Retargeting.Init("VK-RTRG-11201-hHU9b"),VK.Retargeting.Hit()},document.head.appendChild(t)}();
 	body#records
@@ -24,16 +28,17 @@ html(lang="ru")
 			div
 				img(src="https://mc.yandex.ru/watch/35450015" style="position:absolute; left:-9999px;" alt="")
 		<!-- /Yandex.Metrika counter -->
+		div#fb-root
+		script
+			| (function(d, s, id) {var js, fjs = d.getElementsByTagName(s)[0];if (d.getElementById(id)) return;js = d.createElement(s);js.id = id;js.src = 'https://connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.12&appId=2030481470529055&autoLogAppEvents=1';fjs.parentNode.insertBefore(js, fjs);}(document, 'script', 'facebook-jssdk'));
 		include pug/recs/main
 		link(rel="stylesheet", href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css")
 		include pug/recs/descr
 		include pug/recs/modules
-		//- include pug/subscr/after
-		//- include pug/subscr/plan
-		//- include pug/subscr/authors
-		//- include pug/subscr/revs
-		//- include pug/subscr/footer
-		//- include pug/subscr/scripts
+		include pug/recs/prices
+		include pug/recs/videos
+		include pug/recs/footer
+		include pug/recs/scripts
 		<!-- Begin LeadBack code -->
 		//script
 			|	var _emv = _emv || [];_emv['campaign'] = '867c51ec0949a1cc34f60545'; (function() { var em = document.createElement('script');em.type = 'text/javascript';em.async = true;em.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'leadback.ru/js/leadback.js';var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(em, s);})();
