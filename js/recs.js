@@ -27,7 +27,7 @@ $(document).ready(function () {
     if (diff < 0) {
         diff = 0;
         $('.clock-stop').addClass("alert-danger");
-        $('.clock-stop').html("Время вышло!");
+        $('.clock-stop').html("Скидка уменьшилась!");
     }
     clock = $('.clock').FlipClock(diff, {
         clockFace: 'HourlyCounter',
@@ -36,7 +36,7 @@ $(document).ready(function () {
         callbacks: {
             stop: function () {
                 $('.clock-stop').addClass("alert-danger");
-                $('.clock-stop').html("Время вышло!");
+                $('.clock-stop').html("Скидка уменьшилась!");
             }
         },
     });
