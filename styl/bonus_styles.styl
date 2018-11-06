@@ -265,6 +265,105 @@ h1,h2,h3,h4,h5,h6
 			z-index 9
 		&:hover
 			background-color: #0e3f66
+.flip-clock-wrapper
+	width 100%
+	max-width 360px
+	margin: 40px auto 20px
+	font-size: 13px
+.flip-clock-wrapper ul
+	height 50px
+	margin 3px
+.flip-clock-wrapper ul li
+	line-height: 50px
+.flip-clock-wrapper ul li a div.up::after
+	top 24px
+.flip-clock-wrapper ul li a div div.inn
+	font-size: 40px
+	background-color: #f43758
+.flip-clock-divider
+	height 50px
+.flip-clock-dot
+	background-color: #f43758
+	width 7px
+	height 7px
+	left 3px
+.flip-clock-dot.top
+	top 31px
+.flip-clock-dot.bottom
+	bottom: 27px
+.flip-clock-divider .flip-clock-label
+	color #f43758
+	right: -58px
+.flip-clock-divider.hours .flip-clock-label
+	right  -63px
+.flip-clock-divider.minutes .flip-clock-label
+.flip-clock-divider.seconds .flip-clock-label
+	color #f43758
+	right: -65px
+.alert-danger
+	color: #a94442;
+	background-color: #f2dede;
+	padding: 10px;
+	border: 1px solid #ebccd1;
+	border-radius: 4px;
+	font-size: 20px;
+	text-align: center
+	width 100%
+	max-width 480px
+	margin 0 auto 15px
+#home-task 
+	#main
+		text-align: center
+		overflow hidden
+		min-height 1px
+		position relative
+		&:before
+			content: '';
+			display: block;
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background-color: rgba(0,0,0,.86);
+			z-index 0
+.ht_pre	
+	margin-bottom: 0
+.ht_main_date
+	margin: 0 0 10px
+	padding-top: 0
+.ht_main_title
+	font-size: 30px;
+	font-family: "OpenSansCondensedBold", sans-serif;
+	color: rgb(255, 255, 255);
+	line-height: 32px
+	letter-spacing: -0.8px;
+	display: inline-block
+	margin: 20px 0 25px
+.task
+	font-family: 'OpenSans', sans-serif;
+	font-size: 20px
+	width 100%
+	max-width 850px
+	margin 0 auto
+	color #fff
+.bonus_feedback_aftertitle
+	margin-top: 35px
+	text-align: center
+	font-size: 26px
+	font-family: 'OpenSansSemibold';
+	span
+		color #f43758
+.ht_button_last
+	margin-top: 30px
+.remind
+	font-family: "OpenSansBold", sans-serif
+	color: rgb(255, 255, 255);
+	text-transform: uppercase;
+	font-size: 20px
+	font-family: 'Comfortaa', sans-serif
 @media screen and (min-width 2295px)
 	.container
 		width 1400px
